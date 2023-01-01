@@ -12,4 +12,8 @@ RSpec.describe 'Calculate age into days' do
   it 'should return 0 days for age 0' do
     expect(age_in_days(0)).to eq(0)
   end
+
+  it 'should throw an error for negative age' do
+    expect { age_in_days('teste') }.to raise_error(ArgumentError)
+  end
 end
