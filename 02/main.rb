@@ -1,3 +1,10 @@
+# typed: strict
+
+require 'sorbet-runtime'
+
+extend T::Sig
+
+sig { params(phrase: String).returns(String) }
 def findNemo(phrase)
   index = phrase.split.find_index('Nemo')
 

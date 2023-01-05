@@ -1,8 +1,14 @@
+# typed: strict
+
+require 'sorbet-runtime'
+extend T::Sig
+
+sig { params(age: String).returns(Integer) }
 def age_in_days(age)
   Integer(age) * 365
 rescue ArgumentError
-  raise ArgumentError, 'Invalid age'
   0
+  raise ArgumentError, 'Invalid age'
 end
 
 # Detect if it's running as script or as a module
