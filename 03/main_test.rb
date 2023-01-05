@@ -1,6 +1,8 @@
+# typed: true
+
 require_relative 'main'
 
-RSpec.describe 'Find vegetables and skewers' do
+describe 'Find vegetables and skewers' do
   it 'returns the number of vegetables and skewers' do
     expect(find_vegetables_and_skewers([
                                          '--oooo-ooo--',

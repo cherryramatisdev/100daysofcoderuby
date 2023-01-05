@@ -1,6 +1,8 @@
+# typed: true
+
 require_relative 'main'
 
-RSpec.describe 'Calculate age into days' do
+describe 'Calculate age into days' do
   it 'should return 23725 days for age 65' do
     expect(age_in_days('65')).to eq(23_725)
   end

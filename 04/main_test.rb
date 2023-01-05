@@ -1,6 +1,8 @@
+# typed: true
+
 require_relative 'main'
 
-RSpec.describe 'Is Johnny Making Progress' do
+describe 'Is Johnny Making Progress' do
   it 'should return two progress days' do
     expect(progressDays([3, 4, 1, 2])).to eq(2)
   end

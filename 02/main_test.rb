@@ -1,6 +1,8 @@
+# typed: true
+
 require_relative 'main'
 
-RSpec.describe 'Finding Nemo' do
+describe 'Finding Nemo' do
   it 'finds nemo at the end of the phrase' do
     expect(findNemo('I am finding Nemo !')).to eq('I found Nemo at 4!')
   end
