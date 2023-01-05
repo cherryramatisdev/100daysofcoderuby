@@ -12,8 +12,19 @@ GEM
       parser (>= 2.6.4.0)
       sorbet-runtime (>= 0.5.9204)
       unparser
-    rspec-sorbet (1.9.1)
-      sorbet-runtime
+    rspec (3.12.0)
+      rspec-core (~> 3.12.0)
+      rspec-expectations (~> 3.12.0)
+      rspec-mocks (~> 3.12.0)
+    rspec-core (3.12.0)
+      rspec-support (~> 3.12.0)
+    rspec-expectations (3.12.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-mocks (3.12.1)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.12.0)
+    rspec-support (3.12.0)
     sorbet (0.5.10601)
       sorbet-static (= 0.5.10601)
     sorbet-runtime (0.5.10601)
@@ -49,7 +60,7 @@ PLATFORMS
   arm64-darwin-22
 
 DEPENDENCIES
-  rspec-sorbet
+  rspec
   sorbet
   sorbet-runtime
   tapioca
