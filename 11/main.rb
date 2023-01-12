@@ -17,6 +17,7 @@ def dfs(s, ip, res)
     res << ip.join('.') if ip.size == 4
     return
   end
+
   return if ip.size >= 4
 
   for i in 1..3
