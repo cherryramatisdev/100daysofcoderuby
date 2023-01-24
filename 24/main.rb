@@ -13,7 +13,7 @@ def josephus(number_of_soldiers, interval_to_be_killed)
   circle.first
 end
 
-if __FILE__ == $PROGRAM_FILE
+if __FILE__ == $0
   print 'Enter the number of soldiers: '
   number_of_soldiers = gets.chomp.to_i
 
