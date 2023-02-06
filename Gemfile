@@ -14,3 +14,5 @@ gem "sinatra", "~> 3.0"
 gem "faraday", "~> 2.7"
 
 gem "puma", "~> 6.0"
+
+gem "solargraph", "~> 0.48.0"
